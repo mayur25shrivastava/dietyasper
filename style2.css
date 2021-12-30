@@ -82,7 +82,7 @@ html{
 
 #home::before{    
     content: " ";
-    background-image: url('../diet3.jpg');
+    background-image: url("diet3.jpg");
     position: absolute;
     top: 0px;     /* to fit navbar from top imp */
     left: 0px;
