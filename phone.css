@@ -1,0 +1,75 @@
+/* navigation section  */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 12px;
+}
+
+
+/* home section  */
+#home{
+    height: 370px;
+    padding: 3px 68px;
+
+}
+#home::before{
+    height: 480px;
+
+}
+#home p{
+    font-size: 13px;
+}
+/* services section  */
+#services{
+    flex-direction: column;
+    
+}
+#services .box img{
+    display: block;
+    /* width: 55px; */
+}
+/* clients section  */
+#clients{
+    flex-wrap:wrap ;
+    
+}
+#clients img{
+    width: 66px;
+    padding: 6px;
+    height: auto;
+}
+/* utility classes  */
+.h-primary{
+    font-size: 26px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+/* testimonial section  */
+#test{
+    flex-direction: column;
+}
+.imgbx img{
+    display: block;
+}
+/* team section  */
+#team{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.imgbx1 img{
+    display: block;
+}
+/* product section  */
+#products{
+    flex-direction: column;
+    
+}
+#products .box2 img{
+    display: block;
+    /* width: 55px; */
+}

@@ -1,0 +1,390 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;   /*important thing to remember*/
+}
+
+
+/* making navbar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+}
+
+#logo{
+    margin: 7px 37px;
+    
+}
+#logo img{
+    height: 65px;
+    margin: 3px 6px;
+    /* border: 2px solid red; */
+}
+
+
+/* #navbar{
+    position: relative;
+    border: 2px solid yellow; 
+    background-color: black;
+    opacity: 0.4;
+     
+}    */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhaijaan 2',cursive;
+}
+
+#navbar::before{    
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0px;     /* to fit navbar from top imp */
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.4;
+}
+
+
+#navbar ul li{
+    list-style: none; /*for removing dots*/
+    font-size: 22px;
+}
+
+#navbar ul li a{
+    color: rgb(241, 238, 238);
+    padding: 3px 22px; /* note:we give padding in this not in upper */
+    display: block;
+    border-radius: 20px;
+    text-decoration: none; /*for not underlining*/
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+   
+}
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 555px;
+    padding: 3px 200px;
+    justify-content: center;    
+    align-items: center;
+}
+
+#home::before{    
+    content: " ";
+    background-image: url('../diet3.jpg');
+    position: absolute;
+    top: 0px;     /* to fit navbar from top imp */
+    left: 0px;
+    height: 642px;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.79;
+}
+#home h1{
+    color: black;
+    text-align: center;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhaijaan 2',cursive;
+}
+
+/* services center  */
+
+#services-container{
+    background:url('../pexels-kat-smith-567985.jpg');
+    /* background-color: rgb(238, 255, 232); */
+    /* opacity: 0.89; */
+}
+
+#services{
+    /* margin: 34px; */
+    display: flex;
+}
+#services .box{       /*  remember give space between services and .*/
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 45px;
+    border-radius: 07px;
+    background-color: rgb(255, 253, 239);
+    margin-bottom: 21px;
+    
+}
+#services .box img{
+    /* height: 150px;
+    display: block;
+    margin: auto; */
+    height: auto;
+    width: 100%;
+
+}
+#services .box p{
+    font-family: 'Baloo Bhaijaan 2',cursive;
+
+}
+/* product section  */
+#services-container1{
+    /* background:url('../pexels-rovenimagescom-949587.jpg'); */
+    background-color: rgb(250, 255, 221);
+    /* opacity: 0.89; */
+    padding: 1px;
+}
+.container22{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#products{
+    margin: 34px;
+    display: flex;
+}
+#products .box2{       /*  remember give space between services and .*/
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 45px;
+    border-radius: 07px;
+    background-color: rgb(255, 253, 239);
+    margin-bottom: 21px;
+    
+}
+#products .box2 img{
+    display: block;
+    margin: auto;
+}
+
+/* about section  */
+#about-section{
+    background: url('aboutus3.2.jpg');
+}
+
+.abouttext{
+    font-size: 22px;
+    font-family: 'Baloo Bhaijaan 2',cursive;
+    padding: 42px;
+
+}
+
+/* testimonial section  */
+#testimonial-section{
+    /* background-color: rgb(214, 255, 255); */
+    background: url('../pexels-miguel-á-padriñán-255377.jpg');
+    
+    
+}
+#test{
+    display: flex;
+}
+
+.test1{
+    padding: 12px;
+}
+.imgbx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+}
+.imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .test1 img{
+    padding-bottom: 30px;
+    margin-left: 5rem;
+} */
+.profiletext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: brown;
+}
+.cust-review{
+    padding: 2rem;
+    font-family: 'Baloo Bhaijaan 2',cursive;
+    font-size: 18px;
+
+}
+/* client section  */
+
+#client-section{
+    position: relative;
+
+    height: 344px;
+
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../background2.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 120px;
+}
+/* contact section  */
+#contact12{
+    position: relative;
+    background-color: antiquewhite;
+}
+.container12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 34px;
+}
+.nameicon{
+    font-size: 22px;
+    margin-top: 5rem;
+    
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../contactus3.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.4rem;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhaijaan 2',cursive;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* utility classes */
+.h-primary{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 3.8rem;
+    padding: 40px;
+}
+.h-secondary{
+    font-size: 2.4rem;
+    padding: 12px;
+}
+.btn{
+    padding: 2px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;/* remember*/
+}
+
+.center{
+    text-align: center;
+}
+/* team section  */
+/* #team-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat (3,2fr);
+} */
+#team-section{
+    /* background-color: rgb(255, 253, 233); */
+    background: url('../bg1.1.jpg');
+    
+    
+}
+#team{
+    display: flex;
+}
+
+.test2{
+    padding: 12px;
+}
+.imgbx1{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+}
+.imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .test1 img{
+    padding-bottom: 30px;
+    margin-left: 5rem;
+} */
+.profiletext1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: brown;
+}
+.cust-review1{
+    padding: 2rem;
+    font-family: 'Baloo Bhaijaan 2',cursive;
+    font-size: 18px;
+
+}
+
